@@ -137,8 +137,6 @@ Se configuró un timeout ≥ 90 segundos en Power Automate debido a la latencia 
 
 ##  Mejoras futuras
 
-* Implementar sistema de reintentos con límite máximo
-* Agregar logging persistente
 * Implementar autenticación en API
 * Optimizar consultas en Power Apps
 

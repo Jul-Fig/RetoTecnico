@@ -13,7 +13,7 @@ app.post('/api/beneficio/evaluar', (req, res) => {
     fechaNacimiento
   } = req.body;
 
-  // 🔹 Validaciones
+  // Validaciones
   if (!solicitudId || !tipoBeneficio || ingresosMensuales == null || estrato == null || !nucleoFamiliar || !fechaNacimiento) {
     return res.status(400).json({ error: 'Faltan campos requeridos' });
   }
@@ -26,10 +26,10 @@ app.post('/api/beneficio/evaluar', (req, res) => {
     return res.status(400).json({ error: 'Estrato inválido' });
   }
 
-  // 🔹 Calcular edad
+  // Calcular edad
   const edad = new Date().getFullYear() - new Date(fechaNacimiento).getFullYear();
 
-  // 🔹 Reglas
+  // Reglas
   const reglas = [
     {
       condicion: () => ingresosMensuales <= 1000000,
@@ -63,7 +63,7 @@ app.post('/api/beneficio/evaluar', (req, res) => {
     }
   ];
 
-  // 🔹 Cálculo del score con FOR
+  // Cálculo del score con FOR
   let score = 0;
   let motivos = [];
 
@@ -74,7 +74,7 @@ app.post('/api/beneficio/evaluar', (req, res) => {
     }
   }
 
-  // 🔹 Estado final
+  // Estado final
   let estado;
 
   if (score >= 60) {
@@ -85,14 +85,14 @@ app.post('/api/beneficio/evaluar', (req, res) => {
     estado = 'Rechazado';
   }
 
-  // 🔹 Log (lo pide la prueba)
+  // Log 
   console.log({
     solicitudId,
     tipoBeneficio,
     timestamp: new Date()
   });
 
-  // 🔹 Simulación async
+  //  async
   const delay = Math.floor(Math.random() * 3000) + 3000;
 
   setTimeout(() => {

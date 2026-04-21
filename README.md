@@ -97,7 +97,7 @@ El sistema calcula un **score de elegibilidad** basado en las siguientes reglas:
 El servicio implementa un retardo artificial:
 
 ```javascript
-setTimeout(() => { ... }, 4000 ms)
+sconst delay = Math.floor(Math.random() * 3000) + 3000;
 ```
 
 Esto simula un proceso real asincrónico.

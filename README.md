@@ -45,7 +45,7 @@ http://localhost:3000
 ## 🌐 URL pública del servicio (Render)
 
 ```bash
-https://TU-SERVICIO.onrender.com/api/beneficio/evaluar
+https://retotecnico.onrender.com/api/beneficio/evaluar
 ```
 
  Nota: El servicio en Render (free tier) entra en estado de suspensión tras 15 minutos de inactividad.

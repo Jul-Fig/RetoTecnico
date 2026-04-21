@@ -13,7 +13,11 @@ app.post('/api/beneficio/evaluar', (req, res) => {
     fechaNacimiento
   } = req.body;
 
+<<<<<<< HEAD
   //  Validaciones
+=======
+  // Validaciones
+>>>>>>> a54bac7ba338fc53cc36fc9c38cd13521e44374c
   if (!solicitudId || !tipoBeneficio || ingresosMensuales == null || estrato == null || !nucleoFamiliar || !fechaNacimiento) {
     return res.status(400).json({ error: 'Faltan campos requeridos' });
   }
@@ -29,7 +33,11 @@ app.post('/api/beneficio/evaluar', (req, res) => {
   // Calcular edad
   const edad = new Date().getFullYear() - new Date(fechaNacimiento).getFullYear();
 
+<<<<<<< HEAD
   //  Reglas
+=======
+  // Reglas
+>>>>>>> a54bac7ba338fc53cc36fc9c38cd13521e44374c
   const reglas = [
     {
       condicion: () => ingresosMensuales <= 1000000,
@@ -85,14 +93,22 @@ app.post('/api/beneficio/evaluar', (req, res) => {
     estado = 'Rechazado';
   }
 
+<<<<<<< HEAD
   //  Log 
+=======
+  // Log 
+>>>>>>> a54bac7ba338fc53cc36fc9c38cd13521e44374c
   console.log({
     solicitudId,
     tipoBeneficio,
     timestamp: new Date()
   });
 
+<<<<<<< HEAD
   // 🔹  async
+=======
+  //  async
+>>>>>>> a54bac7ba338fc53cc36fc9c38cd13521e44374c
   const delay = Math.floor(Math.random() * 3000) + 3000;
 
   setTimeout(() => {

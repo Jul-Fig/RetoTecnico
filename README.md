@@ -19,7 +19,7 @@ El flujo completo permite registrar solicitudes, procesarlas mediante un servici
 
 ```bash
 git clone https://github.com/Jul-Fig/RetoTecnico.git
-cd TU-REPO
+cd RetoTecnico
 ```
 
 ### 2. Instalar dependencias

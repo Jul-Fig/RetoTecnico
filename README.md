@@ -52,6 +52,29 @@ https://retotecnico.onrender.com/api/beneficio/evaluar
 La primera petición puede tardar hasta **50 segundos**, por lo que se configuró el timeout en Power Automate a **mínimo 90 segundos**.
 
 ---
+## Urls del Frontend
+### Pantalla 1 Registro de Solicitud:
+```bash
+https://apps.powerapps.com/play/e/default-2bac32fd-d9a2-40d9-a272-3a35920f5607/a/246afa2c-e685-4850-b7e4-98213b2280f0?tenantId=2bac32fd-d9a2-40d9-a272-3a35920f5607&hint=aa5de372-f417-484e-8c69-7b4da85d620b&sourcetime=1776814301276
+```
+
+### Pantalla 2 — Consulta de Solicitudes:
+```bash
+https://apps.powerapps.com/play/e/default-2bac32fd-d9a2-40d9-a272-3a35920f5607/a/355795ca-47b3-4909-ac9d-5b1dc32dc0ae?tenantId=2bac32fd-d9a2-40d9-a272-3a35920f5607&hint=12cca507-bed4-48a4-a0f2-5c8b08b53db8&sourcetime=1776814301319
+```
+
+## Urls de Bases de datos
+### Beneficiarios_DB:
+```bash
+https://soysena-my.sharepoint.com/:l:/g/personal/julian_alozada_soy_sena_edu_co/JACefDcav6JISaHiDeg0Za6wAbWWyAgrgLUyeT7dnoWUqho?e=E2s1O3
+```
+
+### Solicitudes_Beneficio
+```bash
+https://soysena-my.sharepoint.com/:l:/g/personal/julian_alozada_soy_sena_edu_co/JAA6l2QauiyRQIWNh8DeY3ADAeTPwu5rrFqfzqR2jRIlcrA?e=ToCT4P
+```
+## Flujos de trabajo
+En la carpeta raiz se encuentran el flujo de Generación de Folio: y el flujo deConsumo del Servicio Externo
 
 ## Flujo de funcionamiento
 

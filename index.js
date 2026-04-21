@@ -34,12 +34,12 @@ app.post('/api/beneficio/evaluar', (req, res) => {
     {
       condicion: () => ingresosMensuales <= 1000000,
       puntos: 30,
-      descripcion: 'Ingresos <= 1M'
+      descripcion: 'Ingresos menor o igual 1 Millon'
     },
     {
       condicion: () => ingresosMensuales > 1000000 && ingresosMensuales <= 2000000,
       puntos: 15,
-      descripcion: 'Ingresos entre 1M y 2M'
+      descripcion: 'Ingresos entre 1 Millon y 2 Mmillon'
     },
     {
       condicion: () => estrato <= 2,
@@ -92,7 +92,7 @@ app.post('/api/beneficio/evaluar', (req, res) => {
     timestamp: new Date()
   });
 
-  // 🔹  async
+  //  async
   const delay = Math.floor(Math.random() * 3000) + 3000;
 
   setTimeout(() => {
@@ -101,7 +101,7 @@ app.post('/api/beneficio/evaluar', (req, res) => {
       score,
       estado,
       motivoDecision: motivos.length > 0 
-    ? motivos.join(', ') 
+    ? motivos.join('- ') 
     : 'No cumple criterios de elegibilidad'
     });
   }, delay);

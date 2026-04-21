@@ -42,7 +42,7 @@ http://localhost:3000
 
 ---
 
-## 🌐 URL pública del servicio (Render)
+##  URL pública del servicio (Render)
 
 ```bash
 https://retotecnico.onrender.com/api/beneficio/evaluar

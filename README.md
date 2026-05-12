@@ -115,18 +115,6 @@ El sistema calcula un **score de elegibilidad** basado en las siguientes reglas:
 
 ---
 
-## Simulación de procesamiento
-
-El servicio implementa un retardo artificial:
-
-```javascript
-sconst delay = Math.floor(Math.random() * 3000) + 3000;
-```
-
-Esto simula un proceso real asincrónico.
-
----
-
 ## Argumentación técnica
 
 ### Uso de arquitectura híbrida
